@@ -4,5 +4,26 @@
     android:layout_height="match_parent"
     tools:context="eu.matzreal.projectbusnavi.RouteSearchFragment">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- TODO: Replace icon inside this TextView with something more appropriate -->
+        <TextView
+            android:id="@+id/tv_direction_from"
+            style="@style/TextViewDirectionsStyle"
+            android:layout_marginBottom="1dp"
+            android:drawableStart="@drawable/ic_chevron_right"
+            android:text="Dworzec autobusowy" />
+
+        <!--TODO: Replace also this icon with something more appropriate -->
+        <TextView
+            android:id="@+id/tv_direction_to"
+            style="@style/TextViewDirectionsStyle"
+            android:drawableStart="@drawable/ic_chevron_right"
+            android:text="Bajerówka" />
+
+    </LinearLayout>
 
 </FrameLayout>
