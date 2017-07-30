@@ -18,8 +18,13 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.setupWithViewPager(viewPager);
 
+        // Set the tab icons
+        tabLayout.getTabAt(0).setIcon(R.drawable.ic_directions);
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_bus);
+
         // Remove the action bar shadow effect on devices with Android 5.0+
         getSupportActionBar().setElevation(0);
+
     }
 
 }

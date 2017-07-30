@@ -6,7 +6,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
     private static final int PAGE_COUNT = 2;
-    private static final String[] PAGE_TITLES = {"Route", "Menu"};
 
     public SimpleFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -31,6 +30,6 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        return PAGE_TITLES[position];
+        return null;
     }
 }
