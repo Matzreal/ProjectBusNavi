@@ -15,14 +15,14 @@
             style="@style/TextViewDirectionsStyle"
             android:layout_marginBottom="1dp"
             android:drawableStart="@drawable/ic_chevron_right"
-            android:text="Dworzec autobusowy" />
+            android:hint="@string/hint_bus_from" />
 
         <!--TODO: Replace also this icon with something more appropriate -->
         <TextView
             android:id="@+id/tv_direction_to"
             style="@style/TextViewDirectionsStyle"
             android:drawableStart="@drawable/ic_chevron_right"
-            android:text="Bajerówka" />
+            android:hint="@string/hint_bus_to" />
 
     </LinearLayout>
 
