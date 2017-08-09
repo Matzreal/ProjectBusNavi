@@ -1,12 +1,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="eu.matzreal.projectbusnavi.BusStopsFragment"
+    tools:context="eu.matzreal.projectbusnavi.BusStopsDialogFragment"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:minHeight="160dp"
-    android:paddingLeft="24dp"
+    android:minWidth="160dp"
+    android:paddingTop="20dp"
     android:paddingRight="24dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="24dp"
     android:elevation="24dp"
     android:orientation="vertical">
 
@@ -14,16 +17,14 @@
         android:id="@+id/et_bus_stops_filter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:layout_marginBottom="24dp"
         android:inputType="text"
-        android:hint="Nazwa przystanku" />
+        android:hint="@string/hint_bus_filter" />
 
-    <TextView
-        android:id="@+id/tv_bus_stops"
+    <ListView
+        android:id="@+id/lv_bus_stops"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="test" />
+        android:layout_height="wrap_content" />
 
 
 </LinearLayout>

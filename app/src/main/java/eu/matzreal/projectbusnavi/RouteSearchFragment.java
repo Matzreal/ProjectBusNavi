@@ -16,11 +16,11 @@ import android.widget.TextView;
 public class RouteSearchFragment extends Fragment {
 
     private TextView directionFromTextView;
+    private TextView directionToTextView;
 
     public RouteSearchFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -32,16 +32,32 @@ public class RouteSearchFragment extends Fragment {
         directionFromTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showBusStopsDialog();
+                String firstBusStop = getResources().getString(R.string.bus_stop_first);
+                showBusStopsDialog(firstBusStop, Direction.FROM);
+            }
+        });
+
+        directionToTextView = view.findViewById(R.id.tv_direction_to);
+        directionToTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String lastBusStop = getResources().getString(R.string.bus_stop_last);
+                showBusStopsDialog(lastBusStop, Direction.TO);
             }
         });
 
         return view;
     }
 
-    private void showBusStopsDialog() {
+    private void showBusStopsDialog(String dialogTitle, Direction direction) {
         FragmentManager fm = getActivity().getSupportFragmentManager();
-        BusStopsFragment fragment = BusStopsFragment.newInstance();
-        fragment.show(fm, "fragment_bus_stops");
+        BusStopsDialogFragment fragment;
+        fragment = BusStopsDialogFragment.newInstance(dialogTitle, direction);
+        fragment.show(fm, "fragment_bus_stops_dialog");
     }
+
+    public enum Direction {
+        FROM, TO
+    }
+
 }

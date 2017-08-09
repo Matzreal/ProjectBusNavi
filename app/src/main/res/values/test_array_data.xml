@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="test_array_data">
+        <item>Rybnicka-Pałki</item>
+        <item>Dworzec autobusowy</item>
+        <item>Dworzec Kolejowy</item>
+        <item>Bajerówka</item>
+        <item>Kleszczówka</item>
+        <item>Wodzisławska - Basen</item>
+        <item>Pszczyńska - Rondo</item>
+        <item>Bankowa</item>
+        <item>Al. Niepodległości</item>
+        <item>Brzozowa</item>
+        <item>Boczna - Klonowa</item>
+        <item>Mikołowska - Dębowa</item>
+        <item>Główna - Remiza</item>
+        <item>Reja</item>
+        <item>Rondo Gliwickie</item>
+    </string-array>
+</resources>

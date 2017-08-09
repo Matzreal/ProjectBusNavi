@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">ProjectBusNavi</string>
+    <string name="placeholder">placeholder</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_route_fragment">Hello RouteSearchFragment</string>
     <string name="hello_navi_fragment">Hello NaviMenuFragment</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hint_bus_from">Przystanek początkowy</string>
     <string name="hint_bus_to">Przystanek końcowy</string>
+    <string name="hint_bus_filter">Nazwa przystanku</string>
+    <string name="bus_stop_first">Wybierz przystanek początkowy</string>
+    <string name="bus_stop_last">Wybierz przystanek końcowy</string>
+
 </resources>

@@ -5,6 +5,10 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
+
+    public final static int ROUTE_SEEARCH_FRAGMENT = 0;
+    public final static int NAVI_MENU_FRAGMENT = 1;
+
     private static final int PAGE_COUNT = 2;
 
     public SimpleFragmentPagerAdapter(FragmentManager fm) {
@@ -14,9 +18,9 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         switch (position) {
-            case 0:
+            case ROUTE_SEEARCH_FRAGMENT:
                 return new RouteSearchFragment();
-            case 1:
+            case NAVI_MENU_FRAGMENT:
                 return new NaviMenuFragment();
             default:
                 return null;
